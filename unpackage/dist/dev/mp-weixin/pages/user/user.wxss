@@ -24,52 +24,41 @@
 /* 垂直间距 */
 /* 透明度 */
 /* 文章场景相关 */
-.navBar.data-v-57280228 {
-  height: 100rpx;
-  background: #F7F8FA;
-  white-space: nowrap;
-  position: fixed;
-  top: 0px;
-  left: 0;
-  z-index: 10;
+.top {
+  padding: 50rpx 0;
+  background: #F8F8F8;
+  color: #666;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-.navBar.data-v-57280228 ::-webkit-scrollbar {
-  width: 4px !important;
-  height: 1px !important;
-  overflow: auto !important;
-  background: transparent !important;
-  -webkit-appearance: auto !important;
-  display: block;
+.top image {
+  width: 150rpx;
+  height: 150rpx;
 }
-.navBar .nav_item.data-v-57280228 {
-  font-size: 40rpx;
-  display: inline-block;
-  line-height: 100rpx;
-  padding: 0 30rpx;
-  color: #333;
+.top .text {
+  font-size: 38rpx;
+  padding-top: 20rpx;
 }
-.navBar .nav_item.active.data-v-57280228 {
-  color: #31C27C;
-}
-.content.data-v-57280228 {
+.content {
   padding: 30rpx;
-  padding-top: 130rpx;
 }
-.content .row.data-v-57280228 {
+.content .row {
   border-bottom: 1px dotted #efefef;
   padding: 20rpx 0;
 }
-.nodata.data-v-57280228 {
+.nohistory {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
-.nodata image.data-v-57280228 {
-  width: 360rpx;
+.nohistory image {
+  width: 450rpx;
 }
-.loading.data-v-57280228 {
-  text-align: center;
+.nohistory .text {
   font-size: 26rpx;
   color: #888;
-  line-height: 2em;
 }
 

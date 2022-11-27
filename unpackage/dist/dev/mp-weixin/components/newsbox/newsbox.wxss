@@ -24,52 +24,40 @@
 /* 垂直间距 */
 /* 透明度 */
 /* 文章场景相关 */
-.navBar.data-v-57280228 {
-  height: 100rpx;
-  background: #F7F8FA;
-  white-space: nowrap;
-  position: fixed;
-  top: 0px;
-  left: 0;
-  z-index: 10;
-}
-.navBar.data-v-57280228 ::-webkit-scrollbar {
-  width: 4px !important;
-  height: 1px !important;
-  overflow: auto !important;
-  background: transparent !important;
-  -webkit-appearance: auto !important;
-  display: block;
-}
-.navBar .nav_item.data-v-57280228 {
-  font-size: 40rpx;
-  display: inline-block;
-  line-height: 100rpx;
-  padding: 0 30rpx;
-  color: #333;
-}
-.navBar .nav_item.active.data-v-57280228 {
-  color: #31C27C;
-}
-.content.data-v-57280228 {
-  padding: 30rpx;
-  padding-top: 130rpx;
-}
-.content .row.data-v-57280228 {
-  border-bottom: 1px dotted #efefef;
-  padding: 20rpx 0;
-}
-.nodata.data-v-57280228 {
+.newsbox {
   display: flex;
-  justify-content: center;
 }
-.nodata image.data-v-57280228 {
-  width: 360rpx;
+.newsbox .pic {
+  width: 230rpx;
+  height: 160rpx;
 }
-.loading.data-v-57280228 {
-  text-align: center;
+.newsbox .pic image {
+  width: 100%;
+  height: 100%;
+}
+.newsbox .text {
+  flex: 1;
+  padding-left: 20rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.newsbox .text .title {
+  font-size: 36rpx;
+  color: #333;
+  text-overflow: -o-ellipsis-lastline;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.newsbox .text .info {
   font-size: 26rpx;
-  color: #888;
-  line-height: 2em;
+  color: #999;
+}
+.newsbox .text .info text {
+  padding-right: 30rpx;
 }
 

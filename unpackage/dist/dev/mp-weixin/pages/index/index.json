@@ -1,4 +1,6 @@
 {
-  "navigationBarTitleText": "uni-app",
-  "usingComponents": {}
+  "navigationBarTitleText": "新闻",
+  "usingComponents": {
+    "newsbox": "/components/newsbox/newsbox"
+  }
 }
