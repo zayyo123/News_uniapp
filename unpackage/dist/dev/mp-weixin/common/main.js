@@ -119,4 +119,4 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ })
 ],[[0,"common/runtime","common/vendor"]]]);
-//# sourceMappingURL=file:///D:/我的文件夹/uniapp/News_uniapp/unpackage/dist/dev/.sourcemap/mp-weixin/common/main.js.map
+//# sourceMappingURL=../../.sourcemap/mp-weixin/common/main.js.map

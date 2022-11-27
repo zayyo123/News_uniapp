@@ -1,5 +1,5 @@
 <template>
-	<view class="newsbox ">
+	<view class="newsItem ">
 		<view class="pic">
 			<image :src="item.picurl" mode="aspectFill"></image>
 		</view>
@@ -20,7 +20,7 @@
 
 <script>
 	export default {
-		name:"nnewsbox ",
+		name:"newsItem ",
 		props:{
 			item:{
 				type:Object,
@@ -38,7 +38,7 @@
 </script>
 
 <style lang="scss">
-.newsbox {
+.newsItem  {
 	display: flex;
 	.pic{
 		width: 230rpx;

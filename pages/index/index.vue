@@ -11,7 +11,7 @@
 		<!-- 新闻列表 -->
 		<view class="content" >
 			<view class="row" v-for="item in newsArr" :key="item.id">
-				<newsbox :item="item" @click.native="goDetail(item)"></newsbox>
+				<newsItem :item="item" @click.native="goDetail(item)"></newsItem>
 			</view>
 		</view>
 		<!-- 数据加载完了，没有更多 -->

@@ -1,6 +1,6 @@
 {
   "navigationBarTitleText": "新闻",
   "usingComponents": {
-    "newsbox": "/components/newsbox/newsbox"
+    "news-item": "/components/newsItem/newsItem"
   }
 }

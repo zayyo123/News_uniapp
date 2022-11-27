@@ -171,7 +171,9 @@ var _default = { data: function data() {return { options: null, detail: {} };}, 
         data: this.options,
         success: function success(res) {
           // console.log(res) 
+          // 转换时间戳
           res.data.posttime = (0, _tool.parseTime)(res.data.posttime);
+          // 对富文本文本里的图片添加宽度，以防变形
           res.data.content = res.data.content.replace(/<img/gi, '<img style="max-width:100%"');
           _this.detail = res.data;
 
@@ -183,7 +185,7 @@ var _default = { data: function data() {return { options: null, detail: {} };}, 
         } });
 
     },
-    // 缓存数据
+    // 缓存浏览数据
     saveHistory: function saveHistory() {var _this2 = this;
 
       var historyArr = uni.getStorageSync("historyArr") || [];
@@ -194,16 +196,17 @@ var _default = { data: function data() {return { options: null, detail: {} };}, 
         title: this.detail.title,
         looktime: (0, _tool.parseTime)(Date.now()) };
 
-
+      // 查询是否是已经存在的浏览记录
       var index = historyArr.findIndex(function (i) {
         return i.id == _this2.detail.id;
       });
-
+      // 删除重复的记录
       if (index >= 0) {
         historyArr.splice(index, 1);
       }
-
+      //添加浏览记录 
       historyArr.unshift(item);
+      //限制最多只能展现最新的10条浏览记录 
       historyArr = historyArr.slice(0, 10);
       uni.setStorageSync("historyArr", historyArr);
     } } };exports.default = _default;
@@ -241,4 +244,4 @@ __webpack_require__.r(__webpack_exports__);
 /***/ })
 
 },[[28,"common/runtime","common/vendor"]]]);
-//# sourceMappingURL=file:///D:/我的文件夹/uniapp/News_uniapp/unpackage/dist/dev/.sourcemap/mp-weixin/pages/detail/detail.js.map
+//# sourceMappingURL=../../../.sourcemap/mp-weixin/pages/detail/detail.js.map

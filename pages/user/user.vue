@@ -6,7 +6,7 @@
 		</view>
 		<view class="content">
 			<view class="row" v-for="item in listArr">
-				<newsbox  :item="item" @click.native="goDetail(item)"></newsbox >
+				<newsItem :item="item" @click.native="goDetail(item)"></newsItem>
 			</view>			
 		</view>
 		
@@ -40,7 +40,7 @@
 			getData(){
 				let hisArr=uni.getStorageSync("historyArr") || []
 				this.listArr=hisArr
-				console.log(this.listArr)
+				// console.log(this.listArr)
 			}
 		}
 	}

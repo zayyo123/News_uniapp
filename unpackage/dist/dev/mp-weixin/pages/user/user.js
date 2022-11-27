@@ -97,8 +97,8 @@ __webpack_require__.r(__webpack_exports__);
 var components
 try {
   components = {
-    newsbox: function() {
-      return __webpack_require__.e(/*! import() | components/newsbox/newsbox */ "components/newsbox/newsbox").then(__webpack_require__.bind(null, /*! @/components/newsbox/newsbox.vue */ 37))
+    newsItem: function() {
+      return __webpack_require__.e(/*! import() | components/newsItem/newsItem */ "components/newsItem/newsItem").then(__webpack_require__.bind(null, /*! @/components/newsItem/newsItem.vue */ 41))
     }
   }
 } catch (e) {
@@ -197,7 +197,7 @@ var _default =
     getData: function getData() {
       var hisArr = uni.getStorageSync("historyArr") || [];
       this.listArr = hisArr;
-      console.log(this.listArr);
+      // console.log(this.listArr)
     } } };exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 
@@ -233,4 +233,4 @@ __webpack_require__.r(__webpack_exports__);
 /***/ })
 
 },[[20,"common/runtime","common/vendor"]]]);
-//# sourceMappingURL=file:///D:/我的文件夹/uniapp/News_uniapp/unpackage/dist/dev/.sourcemap/mp-weixin/pages/user/user.js.map
+//# sourceMappingURL=../../../.sourcemap/mp-weixin/pages/user/user.js.map

@@ -105,11 +105,11 @@
 /******/
 /******/
 /******/ 		// mini-css-extract-plugin CSS loading
-/******/ 		var cssChunks = {"components/newsbox/newsbox":1};
+/******/ 		var cssChunks = {"components/newsItem/newsItem":1};
 /******/ 		if(installedCssChunks[chunkId]) promises.push(installedCssChunks[chunkId]);
 /******/ 		else if(installedCssChunks[chunkId] !== 0 && cssChunks[chunkId]) {
 /******/ 			promises.push(installedCssChunks[chunkId] = new Promise(function(resolve, reject) {
-/******/ 				var href = "" + ({"components/newsbox/newsbox":"components/newsbox/newsbox"}[chunkId]||chunkId) + ".wxss";
+/******/ 				var href = "" + ({"components/newsItem/newsItem":"components/newsItem/newsItem"}[chunkId]||chunkId) + ".wxss";
 /******/ 				var fullhref = __webpack_require__.p + href;
 /******/ 				var existingLinkTags = document.getElementsByTagName("link");
 /******/ 				for(var i = 0; i < existingLinkTags.length; i++) {
@@ -269,5 +269,5 @@
 /******/ })
 /************************************************************************/
 /******/ ([]);
-//# sourceMappingURL=file:///D:/我的文件夹/uniapp/News_uniapp/unpackage/dist/dev/.sourcemap/mp-weixin/common/runtime.js.map
+//# sourceMappingURL=../../.sourcemap/mp-weixin/common/runtime.js.map
   
